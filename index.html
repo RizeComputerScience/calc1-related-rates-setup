@@ -3144,7 +3144,7 @@ function page() {
     '<main id="top">' + hero({ kicker: 'Calculus I · Unit 8', title: 'Related Rates Setup',
       dek: 'Open [Paul’s Related Rates](' + PAUL_RR + ') to Examples 2 and 4. Move a sliding ladder and a draining tank to watch two rates change together, then set up and solve a new problem with each step checked.' }) +
     sec('sec-ladder', '1', 'A Sliding Ladder', '') +
-    prose('', ['In Paul’s Example 2 a 15 ft ladder leans against a wall, with its foot 10 ft from the wall. The foot moves at a steady `F{1}{4}` ft/s. Differentiating `x^2 + y^2 = 225` with respect to `t` gives `2x x′ + 2y y′ = 0`, so `y′ = −F{x x′}{y}`. The readout under the ladder puts the current values into that equation.',
+    prose('', ['In Paul’s Example 2 a 15 ft ladder leans against a wall, with its foot 10 ft from the wall. The foot moves at a steady `F{1}{4}` ft/s. Differentiating `x^2 + y^2 = 225` with respect to `t` gives `2x x′ + 2y y′ = 0`, so `y′ = −F{x x′}{y}`. Every sliding-ladder problem leads to this same equation, `x x′ + y y′ = 0`, because the ladder’s length does not change. The readout under the ladder puts the current values into that equation.',
       'Press Play, drag the slider, or drag the foot of the ladder along the floor. The tick marks show where the foot and the top are every 4 seconds.']) +
     col(toggle('dir', ['Pushed in', 'Pulled out'], { label: 'Which way the foot moves', redraw: ['ladder-ctl', 'ladder-fig'] }) +
       '<div id="ladder-stage" class="rr-stage">' + blk('ladder-fig', ladFigHTML) + '</div>' + blk('ladder-ctl', ladCtlHTML) +

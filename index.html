@@ -2779,7 +2779,6 @@ var selfcheck = (function () {
    (bindLadderDrag), rate bars (rateBar), and the equation-in-rates item (EQI, eqJudge). */
 
 var PAUL_RR = 'https://tutorial.math.lamar.edu/Classes/CalcI/RelatedRates.aspx';
-var PAUL_RR_P = 'https://tutorial.math.lamar.edu/Problems/CalcI/RelatedRates.aspx';
 
 /* ---------------- small helpers ---------------- */
 function clamp(v, a, b) { return Math.max(a, Math.min(b, v)); }
@@ -3140,7 +3139,7 @@ function bindLadderDrag() {
 
 /* ---------------- page ---------------- */
 function page() {
-  return header('Related Rates Setup', [['#sec-ladder', 'Ladder'], ['#sec-tank', 'Tank'], ['#sec-setup', 'Setup'], ['#sec-back', 'Back to Paul']]) +
+  return header('Related Rates Setup', [['#sec-ladder', 'Ladder'], ['#sec-tank', 'Tank'], ['#sec-setup', 'Setup'], ['#sec-back', 'Back to Unit 8']]) +
     '<main id="top">' + hero({ kicker: 'Calculus I · Unit 8', title: 'Related Rates Setup',
       dek: 'Open [Paul’s Related Rates](' + PAUL_RR + ') to Examples 2 and 4. Move a sliding ladder and a draining tank to watch two rates change together, then set up and solve a new problem with each step checked.' }) +
     sec('sec-ladder', '1', 'A Sliding Ladder', '') +
@@ -3155,10 +3154,10 @@ function page() {
       '<p class="ptext">' + P('The volume falls at a constant rate, but the depth falls faster as the tank empties, because the water’s surface gets smaller.') + '</p>' +
       blk('tank-rows', tankRowsHTML)) +
     sec('sec-setup', '3', 'Set Up a New Problem', '') +
-    prose('', ['Set up the problem below in the five steps from the Unit 8 guide. Each step opens when the step before it is correct.']) +
+    prose('', ['Set up the problem below in the five steps from section 1 of Unit 8: Related Rates and L’Hopital’s Rule. Each step opens when the step before it is correct.']) +
     col(problemHTML() + card('Five Steps', blk('setup', setupHTML), 'card-setup') + earlyCardHTML()) +
-    sec('sec-back', '', 'Back to Paul', '') +
-    prose('', ['Continue with Paul’s [Related Rates practice problems](' + PAUL_RR_P + '), Problems 1 to 7, 10 and 11. Problems 1 and 2 give you the equation, so start them at step 4.']) + '</main>';
+    sec('sec-back', '', 'Back to Unit 8', '') +
+    prose('', ['Return to Unit 8: Related Rates and L’Hopital’s Rule and continue with section 2, L’Hospital’s Rule and Indeterminate Forms.']) + '</main>';
 }
 expose({ ladState: ladState, tankState: tankState, eqJudge: eqJudge, rOfT: rOfT, ladSet: ladSet, tankSet: tankSet, EQI: EQI });
 function bindEqEnter() {
